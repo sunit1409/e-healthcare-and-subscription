@@ -1,0 +1,32 @@
+<html>
+<body>
+
+<h1>Please tell me about yourself</h1>
+
+<form action="patient_form_handler.jsp" method="get">
+
+Name: <input type="text" name="firstName">
+  <input type="text" name="lastName"><br>
+Sex:
+  <input type="radio" checked name="sex" value="male">Male
+  <input type="radio" name="sex" value="female">Female
+<p>
+Which Department you think is appropriate in case of doubt choose medicine
+<select name="department">
+  <option value="anaesthetics">Anaesthetics</option> 
+  <option value="cardiology">Cardiology</option> 
+  <option value="ent">ENT</option> 
+  <option value="gastroenterology">Gastroenterology</option> 
+  <option value="surgery">Surgery</option> 
+  <option value="gynaecology">Gynaecology</option> 
+  <option value="haematology">Haematology</option> 
+  <option value="urology">Urology</option> 
+  <option value="medicine" Selected >Medicine</option> 
+</select>
+<br>
+Symptoms: <input type="text" name="symptoms">
+<br>
+<input type="submit">
+</form>
+</body>
+</html>
